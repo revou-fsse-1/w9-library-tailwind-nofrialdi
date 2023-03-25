@@ -52,7 +52,7 @@ function searchLibrary(e) {
           .then((e) => {
             var o,
               e = e.books,
-              e = (console.log(e), e.filter((e) => e.title.slice().includes(t) || e.authors.join(", ").toLowerCase().includes(t) || e.subjects.join(", ").toLowerCase().includes(t)));
+              e = (console.log(e), e.filter((e) => e.title.slice().includes(t) || e.title.toLowerCase().includes(t)));
             0 < e.length
               ? (e.forEach((e) => {
                   var o = document.createElement("a"),
